@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 int main(){
-    int numero, inverso = 0,digito, oringi;
+    int numero, inverso = 0,digito=0, oringi=0;
 
     printf("Escreva um numero");
-    scanf("d%",&numero);
+    scanf("%d",&numero);
     oringi = numero;
 
     while(numero > 0){
@@ -13,10 +13,12 @@ int main(){
         numero = numero / 10;
     }
 
-    if(numero == inverso){
-        printf("E um palindrome");
+    printf("Numero original: %d\n",oringi);
+    printf("Numero inverso: %d\n",inverso);
+    if(oringi == inverso){
+        printf("E um palindrome %d\n",oringi);
     }else{
-        printf("Nao e palindrome");
+        printf("Nao e palindrome %d\n", oringi);
     }
 
 
